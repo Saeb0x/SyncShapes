@@ -1,0 +1,10 @@
+[submodule "SyncShapes/vendor/GLFW"]
+	path = SyncShapes/vendor/GLFW
+	url = https://github.com/glfw/glfw.git
+[submodule "SyncShapes/vendor/opencv"]
+	path = SyncShapes/vendor/opencv
+	url = https://github.com/opencv/opencv.git
+[submodule "SyncShapes/vendor/imgui"]
+	path = SyncShapes/vendor/imgui
+	url = https://github.com/ocornut/imgui.git
+	branch = docking
