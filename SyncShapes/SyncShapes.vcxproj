@@ -11,7 +11,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\OpenCVImageProcessor\ImageProcessor.cpp" />
+    <ClCompile Include="src\ImGuiManager\ImGuiManager.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="vendor\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="vendor\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="vendor\imgui\imgui.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\Window\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\OpenCVImageProcessor\ImageProcessor.h" />
+    <ClInclude Include="src\ImGuiManager\ImGuiManager.h" />
+    <ClInclude Include="src\Window\Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -60,10 +75,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SyncShapes\vendor\GLEW\include;$(SolutionDir)SyncShapes\vendor\freeimage;$(SolutionDir)SyncShapes\vendor\opencv\build\include;$(SolutionDir)SyncShapes\vendor\imgui\backends;$(SolutionDir)SyncShapes\vendor\imgui;$(SolutionDir)SyncShapes\vendor\GLFW\include;$(SolutionDir)SyncShapes\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)SyncShapes\vendor\GLEW\lib\Release\x64;$(SolutionDir)SyncShapes\vendor\freeimage;$(SolutionDir)SyncShapes\vendor\opencv\build\x64\vc16\lib;$(SolutionDir)SyncShapes\vendor\GLFW\src\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32.lib;opencv_world490d.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -74,12 +93,16 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SyncShapes\vendor\GLEW\include;$(SolutionDir)SyncShapes\vendor\freeimage;$(SolutionDir)SyncShapes\vendor\opencv\build\include;$(SolutionDir)SyncShapes\vendor\imgui\backends;$(SolutionDir)SyncShapes\vendor\imgui;$(SolutionDir)SyncShapes\vendor\GLFW\include;$(SolutionDir)SyncShapes\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)SyncShapes\vendor\GLEW\lib\Release\x64;$(SolutionDir)SyncShapes\vendor\freeimage;$(SolutionDir)SyncShapes\vendor\opencv\build\x64\vc16\lib;$(SolutionDir)SyncShapes\vendor\GLFW\src\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32.lib;opencv_world490d.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
