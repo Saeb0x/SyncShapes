@@ -13,11 +13,7 @@ If the repository was cloned non-recursively previously, use the following comma
 
 2. **Configuring the dependencies:**
 ------------------------------
-Build and configure the following dependencies as submodules:
-    1. GLFW
-    2. ImGui
-    3. OpenCV
-Additionally, for convenience, GLEW and FreeImage precompiled binaries are included.
+Build and configure the following dependencies as submodules: GLFW, ImGui, and OpenCV. Additionally, for convenience, GLEW and FreeImage precompiled binaries are included.
 
 3. **Building the Project:**
 ------------------------------
