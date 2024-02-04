@@ -7,6 +7,7 @@
 #include <opencv2/opencv.hpp>
 
 #include <iostream>
+#include <chrono>
 
 #include "OpenCVImageProcessor/ImageProcessor.h"
 
@@ -32,7 +33,6 @@ namespace SyncShapes
 
 			m_LogBuffer.push_back(logMessage.c_str());
 		}
-
 	private:
 		GLFWwindow* m_Window;
 		GLuint m_TextureID; GLuint m_TextureID2;
