@@ -31,7 +31,7 @@ Ensure that the build process includes the necessary dependencies and that the p
 - [ ] **Cross-Platform Support:** While SyncShapes is currently designed for Windows environments, there are aspirations to extend its compatibility to other operating systems in the future.
 - [ ] **Build System Generators:** Future updates may include the integration of build system generators to facilitate smoother compilation and deployment on a wider range of development environments.
 
-## Screenshot
+## Screenshots
 ![SyncShapes Screenshot1](https://github.com/Saeb0x/SyncShapes/assets/56490771/42a047b4-b061-4f6e-b42e-f89836d8aed5)
 
 ---
