@@ -93,7 +93,7 @@ namespace SyncShapes
 		ImGui::TextWrapped("Pre-processing:");
 
 		ImGui::Spacing(); ImGui::Spacing();
-		ImGui::TextWrapped("A set of operations applied to input images before extracting features or performing further analysis. Its purpose is to enhance image quality, reduce noise, and highlight relevant information. The aim to create a cleaner and more representative image for feature extraction.");
+		ImGui::TextWrapped("A set of operations applied to input images before extracting features or performing further analysis. Its purpose is to enhance image quality, reduce noise, and highlight relevant information. The aim is to create a cleaner and more representative image for feature extraction.");
 
 		ImGui::Spacing();
 		static bool applyNoiseRemoval = false;
