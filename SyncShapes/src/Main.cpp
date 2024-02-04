@@ -3,7 +3,7 @@
 
 int main()
 {
-	SyncShapes::Window mainWindow(1024, 768, "SyncShapes");
+	SyncShapes::Window mainWindow(1200, 800, "SyncShapes");
 
 	mainWindow.Run();
 

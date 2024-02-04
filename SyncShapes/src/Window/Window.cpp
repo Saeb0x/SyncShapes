@@ -4,7 +4,6 @@ namespace SyncShapes
 {
 	Window::Window(int width, int height, const char* title) : m_Width(width), m_Height(height), m_Title(title)
 	{
-		// Initialize GLFW
 		if (!glfwInit())
 		{
 			std::cerr << "Failed to initialize GLFW" << std::endl;
@@ -29,9 +28,8 @@ namespace SyncShapes
 
 		glfwMakeContextCurrent(m_Window);
 
-		// Initialize GLEW
-		if (glewInit() != GLEW_OK) {
-			// Handle GLEW initialization failure
+		if (glewInit() != GLEW_OK) 
+		{
 			glfwTerminate();
 			std::exit(EXIT_FAILURE);
 		}
@@ -48,7 +46,6 @@ namespace SyncShapes
 
 	Window::~Window()
 	{
-		// Cleanup GLFW
 		glfwDestroyWindow(m_Window);
 		glfwTerminate();
 
@@ -64,13 +61,10 @@ namespace SyncShapes
 
 			glClear(GL_COLOR_BUFFER_BIT);
 
-			// Update ImGui
 			m_ImGuiManager->Update();
 
-			// Render ImGui over the scene
 			m_ImGuiManager->Render();
 
-			// Swap front and back buffers
 			glfwSwapBuffers(m_Window);
 		}
 	}
