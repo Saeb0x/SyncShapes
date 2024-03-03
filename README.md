@@ -26,6 +26,8 @@ Ensure that the build process includes the necessary dependencies and that the p
 - [x] **Feature Extraction:** The system extracts shape features from images, utilizing the Hu Moments for effective content-based image retrieval. Hu Moments are seven numerical values that describe the shape characteristics of an image. They are invariant to translation, scale, and rotation, making them suitable for shape recognition.
 - [x] **Image Retrieval:** SyncShapes provides an image retrieval functionality that allows users to find similar images based on their shape features.
 - [x] **User-friendly GUI:** SyncShapes features an intuitive GUI powered by ImGui, providing an Editor for interactive image manipulation and procssing, a Viewport for images visualization including contour overlay, and a Log Area for tracking system activities and execution time for each operation.
+
+## Future Plans (To do)
 - [ ]  **Cross-Dataset Retrieval:** Extend the system to support retrieval across multiple datasets, allowing users to find similarities between images from different sources.
 - [ ]  **Cluster-Based Organization:** Organize images into clusters or groups based on similarity, providing users with a visual overview of how images are related.
 - [ ] **Cross-Platform Support:** While SyncShapes is currently designed for Windows environments, there are aspirations to extend its compatibility to other operating systems in the future.
